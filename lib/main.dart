@@ -96,8 +96,7 @@ class SecondScreen extends StatefulWidget {
 
 class _SecondScreenState extends State<SecondScreen> {
   
-    String _email1='/0';
-    String _password='/0'; 
+   
     GlobalKey <FormState> formkey=GlobalKey<FormState>();
   
    
@@ -152,11 +151,7 @@ class _SecondScreenState extends State<SecondScreen> {
                       EmailValidator(errorText: "Not a Valid Email"),
                     ]
                  ),
-                 onSaved: (String? value){
-                  setState(() {
-                    this._email1=value;
-                  });
-                 },
+               
                   ),
                   Padding(
                     padding: EdgeInsets.only(top: 20),
